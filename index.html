@@ -29,6 +29,21 @@ to { opacity: 1; transform: scale(1); }
 
 <audio ref="audioPlayer" src="pinyin_bpmf.mp3" preload="auto" class="hidden"></audio>
 
+<!-- 頂部導航與版權欄 -->
+<div class="flex justify-between items-center mb-6 gap-4">
+<div class="text-[11px] sm:text-xs text-slate-400 leading-relaxed font-medium">
+<p>錄音僅供參考。網頁僅供機構內部使用。</p>
+<p>© 普通話培訓測試中心版權所有。</p>
+</div>
+
+<a
+href="https://yangjingjing2019-lang.github.io/Initial-Final/"
+class="px-4 py-2.5 bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 rounded-xl text-xs sm:text-sm font-bold transition-all shadow-sm flex items-center gap-1.5 active:scale-95 whitespace-nowrap"
+>
+🏠 回到主目錄
+</a>
+</div>
+
 <header class="space-y-6 mb-8">
 <div class="text-center space-y-3">
 <h1 class="text-2xl md:text-3xl font-extrabold text-slate-800 tracking-wide">漢語拼音拼讀學習實驗室</h1>
@@ -39,13 +54,9 @@ to { opacity: 1; transform: scale(1); }
 
 <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
 <div class="space-y-2 w-full md:w-auto">
-<button @click="toggleFullAudio" :class="isFullPlaying ? 'bg-amber-600 hover:bg-amber-700' : 'bg-slate-700 hover:bg-slate-800'" class="w-full md:w-auto text-white px-5 py-3 rounded-xl text-sm sm:text-base font-bold shadow-md transition-colors flex items-center justify-center gap-2 active:scale-98">
+<button @click="toggleFullAudio" :class="isFullPlaying ? 'bg-amber-600 hover:bg-amber-700' : 'bg-slate-700 hover:bg-slate-800'" class="hidden w-full md:w-auto text-white px-5 py-3 rounded-xl text-sm sm:text-base font-bold shadow-md transition-colors items-center justify-center gap-2 active:scale-98">
 <span>{{ isFullPlaying ? '⏸️ 暫停完整音頻' : '▶️ 播放完整聲韻母音頻' }}</span>
 </button>
-<div class="text-[11px] sm:text-xs text-slate-400 leading-relaxed font-medium pl-1 text-center md:text-left">
-<p>錄音僅供參考。網頁僅供機構內部使用。</p>
-<p>© 普通話水平測試中心版權所有。</p>
-</div>
 </div>
 </div>
 
@@ -292,1067 +303,1067 @@ const currentMarkerIndex = ref(0);
 
 const timelineData = ref({
 "b": {
-"start": 1.09,
+"start": 0.89,
 "end": 2.01
 },
 "p": {
-"start": 3.23,
+"start": 3.03,
 "end": 4.17
 },
 "m": {
-"start": 5.38,
+"start": 5.18,
 "end": 6.37
 },
 "f": {
-"start": 7.61,
+"start": 7.41,
 "end": 8.58
 },
 "a": {
-"start": 10.36,
+"start": 10.16,
 "end": 11.28
 },
 "o": {
-"start": 12.7,
+"start": 12.5,
 "end": 13.58
 },
 "e": {
-"start": 15.1,
+"start": 14.9,
 "end": 16.0
 },
 "i": {
-"start": 17.43,
+"start": 17.23,
 "end": 18.32
 },
 "u": {
-"start": 19.8,
+"start": 19.6,
 "end": 20.84
 },
 "ai": {
-"start": 22.53,
+"start": 22.33,
 "end": 23.48
 },
 "ei": {
-"start": 24.92,
+"start": 24.72,
 "end": 25.8
 },
 "ao": {
-"start": 27.47,
+"start": 27.27,
 "end": 28.46
 },
 "ou": {
-"start": 29.85,
+"start": 29.65,
 "end": 30.78
 },
 "iao": {
-"start": 32.35,
+"start": 32.15,
 "end": 33.34
 },
 "ie": {
-"start": 34.66,
+"start": 34.46,
 "end": 35.64
 },
 "iu": {
-"start": 37.06,
+"start": 36.86,
 "end": 38.12
 },
 "an": {
-"start": 39.76,
+"start": 39.56,
 "end": 40.71
 },
 "en": {
-"start": 41.97,
+"start": 41.77,
 "end": 43.01
 },
 "ian": {
-"start": 44.43,
+"start": 44.23,
 "end": 45.59
 },
 "in": {
-"start": 47.39,
+"start": 47.19,
 "end": 48.39
 },
 "ang": {
-"start": 50.13,
+"start": 49.93,
 "end": 51.09
 },
 "eng": {
-"start": 52.58,
+"start": 52.38,
 "end": 53.66
 },
 "ing": {
-"start": 55.21,
+"start": 55.01,
 "end": 56.37
 },
 "bā": {
-"start": 58.78,
+"start": 58.58,
 "end": 59.68
 },
 "bá": {
-"start": 61.07,
+"start": 60.87,
 "end": 61.85
 },
 "bǎ": {
-"start": 63.06,
+"start": 62.86,
 "end": 63.92
 },
 "bà": {
-"start": 65.17,
+"start": 64.97,
 "end": 65.56
 },
 "bō": {
-"start": 67.52,
+"start": 67.32,
 "end": 68.31
 },
 "bó": {
-"start": 69.73,
+"start": 69.53,
 "end": 70.4
 },
 "bǒ": {
-"start": 71.88,
+"start": 71.68,
 "end": 73.09
 },
 "bò": {
-"start": 73.99,
+"start": 73.79,
 "end": 74.46
 },
 "bī": {
-"start": 76.28,
+"start": 76.08,
 "end": 77.0
 },
 "bí": {
-"start": 78.4,
+"start": 78.2,
 "end": 79.15
 },
 "bǐ": {
-"start": 80.45,
+"start": 80.25,
 "end": 81.42
 },
 "bì": {
-"start": 82.76,
+"start": 82.56,
 "end": 83.26
 },
 "bū": {
-"start": 85.22,
+"start": 85.02,
 "end": 86.07
 },
 "bú": {
-"start": 87.13,
+"start": 86.93,
 "end": 87.83
 },
 "bǔ": {
-"start": 88.79,
+"start": 88.59,
 "end": 89.63
 },
 "bù": {
-"start": 90.74,
+"start": 90.54,
 "end": 91.24
 },
 "bāi": {
-"start": 92.95,
+"start": 92.75,
 "end": 93.76
 },
 "bái": {
-"start": 94.8,
+"start": 94.6,
 "end": 95.58
 },
 "bǎi": {
-"start": 96.57,
+"start": 96.37,
 "end": 96.99
 },
 "bài": {
-"start": 98.55,
+"start": 98.35,
 "end": 98.99
 },
 "bēi": {
-"start": 100.83,
+"start": 100.63,
 "end": 101.63
 },
 "béi": {
-"start": 102.7,
+"start": 102.5,
 "end": 103.42
 },
 "běi": {
-"start": 104.58,
+"start": 104.38,
 "end": 105.02
 },
 "bèi": {
-"start": 106.69,
+"start": 106.49,
 "end": 107.14
 },
 "bāo": {
-"start": 108.89,
+"start": 108.69,
 "end": 109.81
 },
 "báo": {
-"start": 110.96,
+"start": 110.76,
 "end": 111.76
 },
 "bǎo": {
-"start": 113.04,
+"start": 112.84,
 "end": 113.81
 },
 "bào": {
-"start": 115.19,
+"start": 114.99,
 "end": 115.61
 },
 "biāo": {
-"start": 117.47,
+"start": 117.27,
 "end": 118.29
 },
 "biáo": {
-"start": 119.42,
+"start": 119.22,
 "end": 120.21
 },
 "biǎo": {
-"start": 121.36,
+"start": 121.16,
 "end": 122.34
 },
 "biào": {
-"start": 123.57,
+"start": 123.37,
 "end": 124.06
 },
 "biē": {
-"start": 125.95,
+"start": 125.75,
 "end": 126.83
 },
 "bié": {
-"start": 128.0,
+"start": 127.8,
 "end": 128.77
 },
 "biě": {
-"start": 129.98,
+"start": 129.78,
 "end": 130.94
 },
 "biè": {
-"start": 132.35,
+"start": 132.15,
 "end": 132.83
 },
 "bān": {
-"start": 134.8,
+"start": 134.6,
 "end": 135.65
 },
 "bán": {
-"start": 136.82,
+"start": 136.62,
 "end": 137.62
 },
 "bǎn": {
-"start": 138.91,
+"start": 138.71,
 "end": 139.4
 },
 "bàn": {
-"start": 141.07,
+"start": 140.87,
 "end": 141.5
 },
 "bēn": {
-"start": 143.43,
+"start": 143.23,
 "end": 144.25
 },
 "bén": {
-"start": 145.48,
+"start": 145.28,
 "end": 146.13
 },
 "běn": {
-"start": 146.355,
+"start": 146.155,
 "end": 147.95
 },
 "bèn": {
-"start": 148.701,
+"start": 148.501,
 "end": 149.91
 },
 "biān": {
-"start": 151.9,
+"start": 151.7,
 "end": 152.73
 },
 "bián": {
-"start": 154.04,
+"start": 153.84,
 "end": 154.82
 },
 "biǎn": {
-"start": 156.14,
+"start": 155.94,
 "end": 156.99
 },
 "biàn": {
-"start": 158.39,
+"start": 158.19,
 "end": 158.86
 },
 "bīn": {
-"start": 160.83,
+"start": 160.63,
 "end": 161.7
 },
 "bín": {
-"start": 162.78,
+"start": 162.58,
 "end": 163.53
 },
 "bǐn": {
-"start": 164.88,
+"start": 164.68,
 "end": 165.73
 },
 "bìn": {
-"start": 166.92,
+"start": 166.72,
 "end": 167.35
 },
 "bāng": {
-"start": 169.4,
+"start": 169.2,
 "end": 170.22
 },
 "báng": {
-"start": 171.48,
+"start": 171.28,
 "end": 172.15
 },
 "bǎng": {
-"start": 173.46,
+"start": 173.26,
 "end": 173.87
 },
 "bàng": {
-"start": 175.54,
+"start": 175.34,
 "end": 175.96
 },
 "bēng": {
-"start": 177.81,
+"start": 177.61,
 "end": 178.75
 },
 "béng": {
-"start": 179.9,
+"start": 179.7,
 "end": 180.58
 },
 "běng": {
-"start": 182.05,
+"start": 181.85,
 "end": 182.51
 },
 "bèng": {
-"start": 184.34,
+"start": 184.14,
 "end": 184.82
 },
 "bīng": {
-"start": 187.02,
+"start": 186.82,
 "end": 187.9
 },
 "bíng": {
-"start": 189.16,
+"start": 188.96,
 "end": 189.91
 },
 "bǐng": {
-"start": 191.12,
+"start": 190.92,
 "end": 191.61
 },
 "bìng": {
-"start": 193.3,
+"start": 193.1,
 "end": 193.76
 },
 "pā": {
-"start": 196.02,
+"start": 195.82,
 "end": 196.73
 },
 "pá": {
-"start": 197.86,
+"start": 197.66,
 "end": 198.58
 },
 "pǎ": {
-"start": 199.71,
+"start": 199.51,
 "end": 200.6
 },
 "pà": {
-"start": 201.96,
+"start": 201.76,
 "end": 202.42
 },
 "pō": {
-"start": 204.2,
+"start": 204.0,
 "end": 204.94
 },
 "pó": {
-"start": 205.01,
+"start": 204.81,
 "end": 206.91
 },
 "pǒ": {
-"start": 208.19,
+"start": 207.99,
 "end": 208.68
 },
 "pò": {
-"start": 209.308,
+"start": 209.108,
 "end": 210.61
 },
 "pī": {
-"start": 212.11,
+"start": 211.91,
 "end": 212.82
 },
 "pí": {
-"start": 213.76,
+"start": 213.56,
 "end": 214.56
 },
 "pǐ": {
-"start": 215.58,
+"start": 215.38,
 "end": 216.46
 },
 "pì": {
-"start": 217.55,
+"start": 217.35,
 "end": 218.0
 },
 "pū": {
-"start": 219.52,
+"start": 219.32,
 "end": 220.24
 },
 "pú": {
-"start": 221.43,
+"start": 221.23,
 "end": 222.04
 },
 "pǔ": {
-"start": 222.241,
+"start": 222.041,
 "end": 223.59
 },
 "pù": {
-"start": 224.162,
+"start": 223.962,
 "end": 225.59
 },
 "pāi": {
-"start": 227.25,
+"start": 227.05,
 "end": 228.01
 },
 "pái": {
-"start": 228.026,
+"start": 227.826,
 "end": 229.9
 },
 "pǎi": {
-"start": 230.06,
+"start": 229.86,
 "end": 231.98
 },
 "pài": {
-"start": 232.053,
+"start": 231.853,
 "end": 233.67
 },
 "pēi": {
-"start": 233.997,
+"start": 233.797,
 "end": 235.562
 },
 "péi": {
-"start": 235.862,
+"start": 235.662,
 "end": 237.427
 },
 "pěi": {
-"start": 237.727,
+"start": 237.527,
 "end": 239.468
 },
 "pèi": {
-"start": 239.768,
+"start": 239.568,
 "end": 241.49
 },
 "pāo": {
-"start": 241.688,
+"start": 241.488,
 "end": 244.06
 },
 "páo": {
-"start": 244.178,
+"start": 243.978,
 "end": 246.01
 },
 "pǎo": {
-"start": 246.066,
+"start": 245.866,
 "end": 247.9
 },
 "pào": {
-"start": 248.211,
+"start": 248.011,
 "end": 249.82
 },
 "pōu": {
-"start": 250.052,
+"start": 249.852,
 "end": 252.209
 },
 "póu": {
-"start": 252.509,
+"start": 252.309,
 "end": 254.36
 },
 "pǒu": {
-"start": 254.541,
+"start": 254.341,
 "end": 256.04
 },
 "pòu": {
-"start": 256.614,
+"start": 256.414,
 "end": 258.12
 },
 "piāo": {
-"start": 258.318,
+"start": 258.118,
 "end": 260.584
 },
 "piáo": {
-"start": 260.584,
+"start": 260.384,
 "end": 262.45
 },
 "piǎo": {
-"start": 262.64,
+"start": 262.44,
 "end": 264.07
 },
 "piào": {
-"start": 264.696,
+"start": 264.496,
 "end": 265.9
 },
 "piē": {
-"start": 266.593,
+"start": 266.393,
 "end": 268.14
 },
 "pié": {
-"start": 268.867,
+"start": 268.667,
 "end": 270.16
 },
 "piě": {
-"start": 270.875,
+"start": 270.675,
 "end": 272.1
 },
 "piè": {
-"start": 273.108,
+"start": 272.908,
 "end": 274.23
 },
 "pān": {
-"start": 274.981,
+"start": 274.781,
 "end": 276.55
 },
 "pán": {
-"start": 277.254,
+"start": 277.054,
 "end": 278.46
 },
 "pǎn": {
-"start": 279.167,
+"start": 278.967,
 "end": 280.61
 },
 "pàn": {
-"start": 281.528,
+"start": 281.328,
 "end": 282.92
 },
 "pēn": {
-"start": 283.505,
+"start": 283.305,
 "end": 285.58
 },
 "pén": {
-"start": 286.305,
+"start": 286.105,
 "end": 287.44
 },
 "pěn": {
-"start": 288.162,
+"start": 287.962,
 "end": 289.39
 },
 "pèn": {
-"start": 290.347,
+"start": 290.147,
 "end": 291.35
 },
 "piān": {
-"start": 291.964,
+"start": 291.764,
 "end": 292.97
 },
 "pián": {
-"start": 294.541,
+"start": 294.341,
 "end": 294.841
 },
 "piǎn": {
-"start": 296.75,
+"start": 296.55,
 "end": 298.507
 },
 "piàn": {
-"start": 298.807,
+"start": 298.607,
 "end": 300.867
 },
 "pīn": {
-"start": 301.167,
+"start": 300.967,
 "end": 303.396
 },
 "pín": {
-"start": 303.696,
+"start": 303.496,
 "end": 305.333
 },
 "pǐn": {
-"start": 305.633,
+"start": 305.433,
 "end": 307.278
 },
 "pìn": {
-"start": 307.578,
+"start": 307.378,
 "end": 309.15
 },
 "pāng": {
-"start": 309.45,
+"start": 309.25,
 "end": 311.535
 },
 "páng": {
-"start": 311.835,
+"start": 311.635,
 "end": 313.592
 },
 "pǎng": {
-"start": 313.892,
+"start": 313.692,
 "end": 315.777
 },
 "pàng": {
-"start": 316.077,
+"start": 315.877,
 "end": 317.778
 },
 "pēng": {
-"start": 318.078,
+"start": 317.878,
 "end": 320.748
 },
 "péng": {
-"start": 321.048,
+"start": 320.848,
 "end": 322.903
 },
 "pěng": {
-"start": 323.203,
+"start": 323.003,
 "end": 325.364
 },
 "pèng": {
-"start": 325.664,
+"start": 325.464,
 "end": 327.284
 },
 "pīng": {
-"start": 327.584,
+"start": 327.384,
 "end": 329.83
 },
 "píng": {
-"start": 330.13,
+"start": 329.93,
 "end": 330.43
 },
 "pǐng": {
-"start": 332.627,
+"start": 332.427,
 "end": 335.032
 },
 "pìng": {
-"start": 335.332,
+"start": 335.132,
 "end": 337.009
 },
 "mā": {
-"start": 338.426,
+"start": 338.226,
 "end": 340.38
 },
 "má": {
-"start": 340.826,
+"start": 340.626,
 "end": 342.1
 },
 "mǎ": {
-"start": 342.546,
+"start": 342.346,
 "end": 343.98
 },
 "mà": {
-"start": 344.426,
+"start": 344.226,
 "end": 345.54
 },
 "mō": {
-"start": 345.986,
+"start": 345.786,
 "end": 348.12
 },
 "mó": {
-"start": 348.566,
+"start": 348.366,
 "end": 349.89
 },
 "mǒ": {
-"start": 350.336,
+"start": 350.136,
 "end": 351.86
 },
 "mò": {
-"start": 352.306,
+"start": 352.106,
 "end": 353.67
 },
 "mē": {
-"start": 354.116,
+"start": 353.916,
 "end": 355.99
 },
 "mé": {
-"start": 356.436,
+"start": 356.236,
 "end": 357.59
 },
 "mě": {
-"start": 358.036,
+"start": 357.836,
 "end": 359.65
 },
 "mè": {
-"start": 360.096,
+"start": 359.896,
 "end": 361.19
 },
 "mī": {
-"start": 361.636,
+"start": 361.436,
 "end": 363.65
 },
 "mí": {
-"start": 364.096,
+"start": 363.896,
 "end": 365.31
 },
 "mǐ": {
-"start": 365.756,
+"start": 365.556,
 "end": 367.34
 },
 "mì": {
-"start": 367.786,
+"start": 367.586,
 "end": 368.95
 },
 "mū": {
-"start": 369.396,
+"start": 369.196,
 "end": 371.19
 },
 "mú": {
-"start": 371.636,
+"start": 371.436,
 "end": 373.06
 },
 "mǔ": {
-"start": 373.506,
+"start": 373.306,
 "end": 375.2
 },
 "mù": {
-"start": 375.646,
+"start": 375.446,
 "end": 376.9
 },
 "māi": {
-"start": 377.346,
+"start": 377.146,
 "end": 379.45
 },
 "mái": {
-"start": 379.896,
+"start": 379.696,
 "end": 381.49
 },
 "mǎi": {
-"start": 381.936,
+"start": 381.736,
 "end": 383.5
 },
 "mài": {
-"start": 383.946,
+"start": 383.746,
 "end": 385.37
 },
 "mēi": {
-"start": 385.816,
+"start": 385.616,
 "end": 388.2
 },
 "méi": {
-"start": 388.646,
+"start": 388.446,
 "end": 389.87
 },
 "měi": {
-"start": 390.316,
+"start": 390.116,
 "end": 391.74
 },
 "mèi": {
-"start": 392.186,
+"start": 391.986,
 "end": 393.27
 },
 "māo": {
-"start": 393.716,
+"start": 393.516,
 "end": 396.16
 },
 "máo": {
-"start": 396.606,
+"start": 396.406,
 "end": 397.87
 },
 "mǎo": {
-"start": 398.316,
+"start": 398.116,
 "end": 399.9
 },
 "mào": {
-"start": 400.346,
+"start": 400.146,
 "end": 401.65
 },
 "mōu": {
-"start": 402.096,
+"start": 401.896,
 "end": 404.34
 },
 "móu": {
-"start": 404.786,
+"start": 404.586,
 "end": 405.92
 },
 "mǒu": {
-"start": 406.366,
+"start": 406.166,
 "end": 407.77
 },
 "mòu": {
-"start": 408.216,
+"start": 408.016,
 "end": 409.13
 },
 "miāo": {
-"start": 409.576,
+"start": 409.376,
 "end": 411.7
 },
 "miáo": {
-"start": 412.146,
+"start": 411.946,
 "end": 413.38
 },
 "miǎo": {
-"start": 413.826,
+"start": 413.626,
 "end": 415.25
 },
 "miào": {
-"start": 415.696,
+"start": 415.496,
 "end": 416.79
 },
 "miē": {
-"start": 417.236,
+"start": 417.036,
 "end": 419.1
 },
 "mié": {
-"start": 419.546,
+"start": 419.346,
 "end": 420.92
 },
 "miě": {
-"start": 421.366,
+"start": 421.166,
 "end": 422.91
 },
 "miè": {
-"start": 423.356,
+"start": 423.156,
 "end": 424.67
 },
 "miū": {
-"start": 425.116,
+"start": 424.916,
 "end": 427.22
 },
 "miú": {
-"start": 427.666,
+"start": 427.466,
 "end": 429.01
 },
 "miǔ": {
-"start": 429.456,
+"start": 429.256,
 "end": 431.06
 },
 "miù": {
-"start": 431.506,
+"start": 431.306,
 "end": 432.55
 },
 "mān": {
-"start": 432.996,
+"start": 432.796,
 "end": 434.86
 },
 "mán": {
-"start": 435.306,
+"start": 435.106,
 "end": 436.8
 },
 "mǎn": {
-"start": 437.246,
+"start": 437.046,
 "end": 438.9
 },
 "màn": {
-"start": 439.346,
+"start": 439.146,
 "end": 440.57
 },
 "mēn": {
-"start": 441.016,
+"start": 440.816,
 "end": 443.32
 },
 "mén": {
-"start": 443.766,
+"start": 443.566,
 "end": 445.12
 },
 "měn": {
-"start": 445.566,
+"start": 445.366,
 "end": 447.08
 },
 "mèn": {
-"start": 447.526,
+"start": 447.326,
 "end": 448.78
 },
 "miān": {
-"start": 449.226,
+"start": 449.026,
 "end": 451.62
 },
 "mián": {
-"start": 452.066,
+"start": 451.866,
 "end": 453.58
 },
 "miǎn": {
-"start": 454.026,
+"start": 453.826,
 "end": 455.69
 },
 "miàn": {
-"start": 456.136,
+"start": 455.936,
 "end": 457.54
 },
 "mīn": {
-"start": 457.986,
+"start": 457.786,
 "end": 460.06
 },
 "mín": {
-"start": 462.38,
+"start": 462.18,
 "end": 462.19
 },
 "mǐn": {
-"start": 462.636,
+"start": 462.436,
 "end": 464.46
 },
 "mìn": {
-"start": 464.906,
+"start": 464.706,
 "end": 466.32
 },
 "māng": {
-"start": 466.766,
+"start": 466.566,
 "end": 469.1
 },
 "máng": {
-"start": 469.546,
+"start": 469.346,
 "end": 471.05
 },
 "mǎng": {
-"start": 471.496,
+"start": 471.296,
 "end": 473.47
 },
 "màng": {
-"start": 473.916,
+"start": 473.716,
 "end": 475.44
 },
 "mēng": {
-"start": 475.886,
+"start": 475.686,
 "end": 478.17
 },
 "méng": {
-"start": 478.616,
+"start": 478.416,
 "end": 480.24
 },
 "měng": {
-"start": 480.686,
+"start": 480.486,
 "end": 482.77
 },
 "mèng": {
-"start": 483.216,
+"start": 483.016,
 "end": 484.85
 },
 "mīng": {
-"start": 485.296,
+"start": 485.096,
 "end": 487.83
 },
 "míng": {
-"start": 488.276,
+"start": 488.076,
 "end": 489.93
 },
 "mǐng": {
-"start": 490.376,
+"start": 490.176,
 "end": 492.49
 },
 "mìng": {
-"start": 492.936,
+"start": 492.736,
 "end": 494.63
 },
 "fā": {
-"start": 495.076,
+"start": 494.876,
 "end": 497.32
 },
 "fá": {
-"start": 497.766,
+"start": 497.566,
 "end": 499.28
 },
 "fǎ": {
-"start": 499.726,
+"start": 499.526,
 "end": 501.32
 },
 "fà": {
-"start": 501.766,
+"start": 501.566,
 "end": 503.16
 },
 "fō": {
-"start": 503.606,
+"start": 503.406,
 "end": 505.9
 },
 "fó": {
-"start": 506.346,
+"start": 506.146,
 "end": 508.22
 },
 "fǒ": {
-"start": 508.666,
+"start": 508.466,
 "end": 510.53
 },
 "fò": {
-"start": 510.976,
+"start": 510.776,
 "end": 512.55
 },
 "fū": {
-"start": 512.996,
+"start": 512.796,
 "end": 515.28
 },
 "fú": {
-"start": 515.726,
+"start": 515.526,
 "end": 517.43
 },
 "fǔ": {
-"start": 517.876,
+"start": 517.676,
 "end": 519.72
 },
 "fù": {
-"start": 520.166,
+"start": 519.966,
 "end": 521.82
 },
 "fēi": {
-"start": 522.266,
+"start": 522.066,
 "end": 527.29
 },
 "féi": {
-"start": 527.736,
+"start": 527.536,
 "end": 529.52
 },
 "fēi": {
-"start": 522.566,
+"start": 522.366,
 "end": 524.700
 },
 "féi": {
-"start": 525.200,
+"start": 525.0,
 "end": 527.290
 },
 "fěi": {
-"start": 527.736,
+"start": 527.536,
 "end": 529.52
 },
 "fèi": {
-"start": 529.966,
+"start": 529.766,
 "end": 531.47
 },
 "fōu": {
-"start": 531.916,
+"start": 531.716,
 "end": 534.22
 },
 "fóu": {
-"start": 534.666,
+"start": 534.466,
 "end": 536.39
 },
 "fǒu": {
-"start": 536.836,
+"start": 536.636,
 "end": 538.71
 },
 "fòu": {
-"start": 539.156,
+"start": 538.956,
 "end": 540.64
 },
 "fān": {
-"start": 541.086,
+"start": 540.886,
 "end": 543.52
 },
 "fán": {
-"start": 543.966,
+"start": 543.766,
 "end": 545.58
 },
 "fǎn": {
-"start": 546.026,
+"start": 545.826,
 "end": 547.82
 },
 "fàn": {
-"start": 548.266,
+"start": 548.066,
 "end": 549.76
 },
 "fēn": {
-"start": 550.206,
+"start": 550.006,
 "end": 552.57
 },
 "fén": {
-"start": 553.016,
+"start": 552.816,
 "end": 554.69
 },
 "fěn": {
-"start": 555.136,
+"start": 554.936,
 "end": 557.145
 },
 "fèn": {
-"start": 557.416,
+"start": 557.216,
 "end": 558.92
 },
 "fāng": {
-"start": 559.366,
+"start": 559.166,
 "end": 562.01
 },
 "fáng": {
-"start": 562.456,
+"start": 562.256,
 "end": 564.01
 },
 "fǎng": {
-"start": 564.456,
+"start": 564.256,
 "end": 566.19
 },
 "fàng": {
-"start": 566.636,
+"start": 566.436,
 "end": 568.24
 },
 "fēng": {
-"start": 568.686,
+"start": 568.586,
 "end": 570.999
 },
 "féng": {
@@ -1360,7 +1371,7 @@ const timelineData = ref({
 "end": 573.455
 },
 "fěng": {
-"start": 573.455,
+"start": 573.355,
 "end": 575.945
 },
 "fèng": {
